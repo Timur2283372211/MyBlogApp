@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій блог | Головна</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Шапка з пошуком -->
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <i class="fas fa-pen-fancy"></i>
+          <span>МійБлог</span>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Пошук постів..." id="searchInput" />
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="auth-buttons">
+          <button class="btn btn-login">Увійти</button>
+          <button class="btn btn-register">Реєстрація</button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Головна</a>
+          </li>
+          <li>
+            <a href="categories.html" id="categories-link"><i class="fas fa-list"></i> Категорії</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> Про автора</a>
+          </li>
+          <li>
+            <a href="contacts.html"><i class="fas fa-envelope"></i> Контакти</a>
+          </li>
+          <li>
+            <a href="settings.html"><i class="fas fa-cog"></i> Налаштування</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основна частина -->
+  <main class="main">
+    <div class="container main-container">
+      <!-- Бокова панель -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Про мене</h3>
+          <div class="widget-content">
+            <img src="user.png" alt="Автор" class="author-img" />
+            <p>Привіт! Я блогер і люблю ділитися своїми думками зі світом.</p>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Категорії</h3>
+          <ul class="categories-list">
+            <li>
+              <a href="#" class="category-filter active" data-category="all">Всі категорії <span
+                  id="all-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#" class="category-filter" data-category="travel">Подорожі <span id="travel-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#" class="category-filter" data-category="cooking">Кулінарія <span
+                  id="cooking-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#" class="category-filter" data-category="tech">Технології <span id="tech-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#" class="category-filter" data-category="books">Книги <span id="books-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#" class="category-filter" data-category="personal">Особисте <span
+                  id="personal-count">(0)</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Популярні теги</h3>
+          <div class="tags">
+            <a href="#" class="tag">#подорожі</a>
+            <a href="#" class="tag">#рецепти</a>
+            <a href="#" class="tag">#програмування</a>
+            <a href="#" class="tag">#книги</a>
+            <a href="#" class="tag">#життя</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Основний контент -->
+      <div class="content">
+        <!-- Форма створення поста -->
+        <section class="create-post">
+          <h2 class="section-title">
+            <i class="fas fa-plus-circle"></i> Створити новий пост
+          </h2>
+          <form id="addPostForm" class="post-form">
+            <div class="form-group">
+              <label for="postTitle">Заголовок</label>
+              <input type="text" id="postTitle" placeholder="Як я навчився програмувати..." required />
+            </div>
+
+            <div class="form-group">
+              <label for="postAuthor">Автор</label>
+              <input type="text" id="postAuthor" placeholder="Ваше ім'я" required />
+            </div>
+
+            <div class="form-group">
+              <label for="postCategory">Категорія</label>
+              <select id="postCategory" required>
+                <option value="" disabled selected>Оберіть категорію</option>
+                <option value="travel">Подорожі</option>
+                <option value="cooking">Кулінарія</option>
+                <option value="tech">Технології</option>
+                <option value="books">Книги</option>
+                <option value="personal">Особисте</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="postContent">Текст поста</label>
+              <textarea id="postContent" placeholder="Розкажіть свою історію..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" id="addPostBtn" class="btn btn-primary">
+                Опублікувати
+              </button>
+              <button type="button" class="btn btn-secondary">
+                Зберегти чернетку
+              </button>
+            </div>
+            <div id="addPostResult"></div>
+          </form>
+        </section>
+
+        <!-- Список постів -->
+        <section class="posts">
+          <h2 class="section-title">
+            <i class="fas fa-newspaper"></i> Останні пости
+          </h2>
+
+          <div id="posts-container" class="posts-container">
+            <!-- Пости будуть додаватися сюди через JavaScript -->
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="page-item active">1</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Підвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Про блог</h3>
+          <p>
+            Це особистий блог, де я ділюся своїми думками, досвідом та
+            спостереженнями.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Швидкі посилання</h3>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="settings.html">Налаштування</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Соціальні мережі</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2023 МійБлог. Усі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

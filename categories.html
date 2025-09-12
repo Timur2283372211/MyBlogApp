@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій блог | Категорії</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-pen-fancy"></i>
+                    <span>МійБлог</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Пошук постів...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-login">Увійти</button>
+                    <button class="btn btn-register">Реєстрація</button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="categories.html" class="active"><i class="fas fa-list"></i> Категорії</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> Про автора</a></li>
+                    <li><a href="contacts.html"><i class="fas fa-envelope"></i> Контакти</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> Налаштування</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основна частина -->
+    <main class="main">
+        <div class="container">
+            <section class="categories-section">
+                <h1 class="page-title"><i class="fas fa-list"></i> Всі категорії</h1>
+                
+                <div class="categories-grid">
+                    <a href="index.html?category=travel" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Подорожі</h3>
+                        <p>45 постів</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                    
+                    <a href="index.html?category=cooking" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Кулінарія</h3>
+                        <p>28 постів</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                    
+                    <a href="index.html?category=tech" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Технології</h3>
+                        <p>63 постів</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                    
+                    <a href="index.html?category=books" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Книги</h3>
+                        <p>19 постів</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                    
+                    <a href="index.html?category=personal" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Особисте</h3>
+                        <p>37 постів</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                    
+                    <a href="index.html?category=photography" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Фотографія</h3>
+                        <p>22 пости</p>
+                        <div class="category-overlay"></div>
+                    </a>
+                </div>
+                
+                <div class="popular-tags">
+                    <h2><i class="fas fa-tags"></i> Популярні теги</h2>
+                    <div class="tags-container">
+                        <a href="#" class="tag">#подорожі</a>
+                        <a href="#" class="tag">#рецепти</a>
+                        <a href="#" class="tag">#програмування</a>
+                        <a href="#" class="tag">#книги</a>
+                        <a href="#" class="tag">#життя</a>
+                        <a href="#" class="tag">#фотографія</a>
+                        <a href="#" class="tag">#дизайн</a>
+                        <a href="#" class="tag">#здоров'я</a>
+                        <a href="#" class="tag">#музика</a>
+                        <a href="#" class="tag">#кіно</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Про блог</h3>
+                    <p>Це особистий блог, де я ділюся своїми думками, досвідом та спостереженнями.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Швидкі посилання</h3>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про мене</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="settings.html">Налаштування</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Соціальні мережі</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 МійБлог. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="categories.js"></script>
+</body>
+</html>

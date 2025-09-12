@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій блог | Контакти</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-pen-fancy"></i>
+                    <span>МійБлог</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Пошук постів...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-login">Увійти</button>
+                    <button class="btn btn-register">Реєстрація</button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="categories.html"><i class="fas fa-list"></i> Категорії</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> Про автора</a></li>
+                    <li><a href="contacts.html" class="active"><i class="fas fa-envelope"></i> Контакти</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> Налаштування</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основна частина -->
+    <main class="main">
+        <div class="container">
+            <section class="contact-section">
+                <h1 class="page-title"><i class="fas fa-envelope"></i> Наші контакти</h1>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Адреса</h3>
+                            <p>м. Київ, вул. Хрещатик, 1</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Телефон</h3>
+                            <p>+380 (44) 123-45-67</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>info@myblog.com</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Години роботи</h3>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                            <p>Сб-Нд: Вихідний</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Напишіть нам</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <input type="text" id="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Повідомлення</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Надіслати</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2152591718356!2d30.523500315731386!3d50.45010097947538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce59b9c2e8a5%3A0x5c5a3c5a3c5a3c5!2z0LLRg9C70LjRhtGPINCl0YDQtdC80YHQutCw0Y8sIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1620000000000!5m2!1suk!2sua" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Про блог</h3>
+                    <p>Це особистий блог, де я ділюся своїми думками, досвідом та спостереженнями.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Швидкі посилання</h3>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про мене</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="settings.html">Налаштування</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Соціальні мережі</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 МійБлог. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contacts.js"></script>
+</body>
+</html>
