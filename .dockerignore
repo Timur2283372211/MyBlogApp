@@ -1,7 +1,0 @@
-Dockerfile
-.dockerignore
-.git
-.gitignore
-README.md
-node_modules/
-# Добавьте сюда любые другие файлы, которые не нужны в финальном образе
