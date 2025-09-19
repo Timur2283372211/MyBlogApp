@@ -1,5 +1,10 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "json-server": "^0.17.4"
   }
 }
